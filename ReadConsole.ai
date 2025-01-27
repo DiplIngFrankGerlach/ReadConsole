@@ -1,0 +1,23 @@
+
+
+int ReadConsole::readInteger()
+{
+    var int result;
+    inline_cpp[[ cin >> result; ]]
+    return result;
+}
+
+
+void ReadConsole::readString(&String_16 str)
+{
+   inline_cpp[[
+      string tempStr;
+      cin >> tempStr;
+      for(int i = 0; i < tempStr.size(); i++)
+      {
+          char schnuller;
+          str.append(&schnuller,tempStr[i]);
+      }
+   ]]
+}
+

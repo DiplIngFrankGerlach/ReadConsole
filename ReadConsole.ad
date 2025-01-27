@@ -1,0 +1,8 @@
+
+
+class ReadConsole
+{
+methods:
+    int readInteger();
+    void readString(&String_16 str);
+};

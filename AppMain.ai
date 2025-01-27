@@ -1,0 +1,16 @@
+
+int Main::main()
+{ 
+    var PrintfClass pfc;
+
+    var ReadConsole rc;
+    var int a = rc.readInteger();
+    var String_16 b;
+
+    rc.readString(b);
+
+    pfc.fstr("$ $").sa(a).sa(b).pr();
+
+
+   return 1;
+}
